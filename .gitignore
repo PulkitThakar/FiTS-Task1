@@ -1,6 +1,7 @@
 Data-Science-template-master/Data/fashion-mnist_train.csv
 Data-Science-template-master/Data/fashion-mnist_test.csv
 checkpoint
-FiTS_Task_1.pyproj
-FiTS_Task_1.sln
 FiTS_Task_1.py
+.vs
+FiTS-Task-1.pyproj
+FiTS-Task-1.sln
