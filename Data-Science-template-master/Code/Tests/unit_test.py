@@ -15,8 +15,12 @@ class Test_Model(unittest.TestCase):
 
     def test_ModelSaving(self):
         self.assertTrue(checkModelSaving())
+
     def test_Precision(self):
         self.assertTrue(checkPrecision())
+    
+    def test_TrainingMethod(self):
+        self.assertTrue(checkTrainingMethod())
   
   
 #the following is not required if call by pytest instead of python

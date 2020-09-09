@@ -12,6 +12,7 @@ import requests
 import json
 import numpy as np
 import os
+import tensorflow as tf
 
 checkdeploymentError=""
 
@@ -66,3 +67,12 @@ def checkPrecision():
     except:
         result = False
     return result
+
+def checkTrainingMethod():
+    try:
+        model, precision = train.train_model()
+        result = (type(model) == tf.python.keras.engine.sequential.Sequential and type(precision.item()) == float)
+    except:
+        result = False
+    return result
+    
